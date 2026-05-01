@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" role="img" aria-label="DEXA Movers logo">
+  <title>DEXA Movers</title>
+
+  <!--
+    D letterform — deep slate #253042
+    Outer: left stem (rect) + right semicircle (arc, r=100)
+    Inner: right semicircle counter (arc, r=64) + left edge line
+    fill-rule="evenodd" cuts the counter from the outer shape
+  -->
+  <path
+    fill="#253042"
+    fill-rule="evenodd"
+    d="
+      M 60,60 L 95,60 A 100,100 0 0,1 95,260 L 60,260 Z
+      M 95,96 A 64,64 0 0,1 95,224 L 95,96 Z
+    "
+  />
+
+  <!--
+    Copper accent dot floating inside D's hollow counter.
+    Links the D (slate) to the M (copper) — shared colour signal.
+  -->
+  <circle cx="130" cy="160" r="20" fill="#B85718"/>
+
+  <!--
+    M letterform — copper #B85718
+    Bold geometric M: two vertical stems + two angled bars meeting at a centre V.
+    Top V notch peaks at (287,145). Bottom V merges at (287,190).
+  -->
+  <polygon
+    fill="#B85718"
+    points="
+      215,260 250,260 250,110
+      287,190
+      324,110 324,260 360,260
+      360,60 324,60 287,145 250,60 215,60
+    "
+  />
+
+  <!-- Wordmark: DEXA MOVERS -->
+  <text
+    x="210" y="308"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="34"
+    font-weight="600"
+    letter-spacing="6"
+    fill="#253042"
+  >DEXA MOVERS</text>
+
+  <!-- Copper rule separator -->
+  <rect x="152" y="320" width="116" height="1.5" rx="1" fill="#B85718"/>
+
+  <!-- Ottawa subtitle -->
+  <text
+    x="210" y="346"
+    text-anchor="middle"
+    font-family="'Plus Jakarta Sans', Arial, sans-serif"
+    font-size="11"
+    font-weight="600"
+    letter-spacing="4"
+    fill="#ADA49A"
+  >OTTAWA</text>
+</svg>

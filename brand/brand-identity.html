@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DEXA Movers Brand Identity</title>
+    <style>
+      :root {
+        --cream: #f7f3ec;
+        --cream-2: #edeae1;
+        --white: #fffdfa;
+        --ink: #19160f;
+        --stone: #6e6459;
+        --stone-2: #ada49a;
+        --slate: #253042;
+        --copper: #b85718;
+        --line: rgba(25, 22, 15, 0.09);
+        --shadow: 0 18px 48px rgba(25, 22, 15, 0.08);
+        --radius: 18px;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Plus Jakarta Sans", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(184, 87, 24, 0.08), transparent 28rem),
+          radial-gradient(circle at bottom right, rgba(37, 48, 66, 0.08), transparent 26rem),
+          var(--cream);
+        line-height: 1.6;
+      }
+      a { color: inherit; }
+      code {
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+        background: rgba(37, 48, 66, 0.06);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.92em;
+      }
+      img { display: block; max-width: 100%; }
+      .page {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+        align-items: stretch;
+        margin-bottom: 28px;
+      }
+      .card {
+        background: rgba(255, 253, 250, 0.82);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+      }
+      .hero-copy {
+        padding: 42px;
+      }
+      .eyebrow {
+        display: inline-block;
+        margin: 0 0 16px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--copper);
+      }
+      h1, h2, h3 {
+        margin: 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 600;
+        line-height: 1.04;
+      }
+      h1 {
+        font-size: clamp(3rem, 6vw, 5rem);
+        margin-bottom: 18px;
+        color: var(--slate);
+      }
+      h2 {
+        font-size: clamp(2rem, 3.4vw, 2.8rem);
+        margin-bottom: 18px;
+        color: var(--slate);
+      }
+      h3 {
+        font-size: 1.55rem;
+        margin-bottom: 12px;
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      .lead {
+        max-width: 56ch;
+        font-size: 1.05rem;
+        color: var(--stone);
+      }
+      .hero-preview {
+        padding: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(circle at top left, rgba(184, 87, 24, 0.18), transparent 14rem),
+          radial-gradient(circle at bottom right, rgba(37, 48, 66, 0.12), transparent 14rem),
+          linear-gradient(135deg, #fff8f0, #efe8dd);
+      }
+      .hero-preview img {
+        width: min(100%, 420px);
+      }
+      .grid {
+        display: grid;
+        gap: 28px;
+        margin-bottom: 28px;
+      }
+      .grid.two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .section {
+        padding: 34px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .chip {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(37, 48, 66, 0.06);
+        color: var(--slate);
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+      .logo-samples {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .logo-sample {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--white);
+      }
+      .logo-sample.dark {
+        background: var(--slate);
+      }
+      .logo-sample .preview {
+        padding: 28px;
+      }
+      .logo-sample .label {
+        padding: 14px 18px;
+        border-top: 1px solid var(--line);
+        font-size: 0.92rem;
+        color: var(--stone);
+        background: rgba(255, 255, 255, 0.55);
+      }
+      .logo-sample.dark .label {
+        border-color: rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.78);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .swatch {
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--white);
+      }
+      .swatch-color {
+        height: 112px;
+      }
+      .swatch-meta {
+        padding: 16px;
+        font-size: 0.92rem;
+      }
+      .swatch-meta strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .type-samples {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .type-sample {
+        padding: 22px;
+        border-radius: 18px;
+        background: rgba(37, 48, 66, 0.04);
+      }
+      .type-sample .serif {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 3rem;
+        line-height: 1;
+        color: var(--slate);
+        margin-bottom: 10px;
+      }
+      .type-sample .sans {
+        font-family: "Plus Jakarta Sans", Arial, sans-serif;
+        font-size: 1rem;
+        color: var(--ink);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.96rem;
+      }
+      th, td {
+        text-align: left;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        font-size: 0.82rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--stone);
+      }
+      .asset-links code {
+        font-size: 0.92rem;
+      }
+      .footer-note {
+        margin-top: 8px;
+        color: var(--stone);
+        font-size: 0.94rem;
+      }
+      @media (max-width: 920px) {
+        .hero,
+        .grid.two,
+        .logo-samples,
+        .swatches,
+        .type-samples {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="card hero-copy">
+          <p class="eyebrow">Brand Identity / May 1, 2026</p>
+          <h1>DEXA Movers</h1>
+          <p class="lead">
+            DEXA is positioned as a calm, capable, premium-feeling moving brand:
+            practical enough for everyday moves, polished enough to feel trusted
+            on uniforms, trucks, social pages, and printed materials.
+          </p>
+          <p class="lead">
+            The identity combines a deep slate base, a copper accent, and an
+            editorial serif wordmark to communicate reliability, care, and
+            confidence without looking generic.
+          </p>
+          <div class="chips">
+            <span class="chip">Calm</span>
+            <span class="chip">Capable</span>
+            <span class="chip">Premium</span>
+            <span class="chip">Local</span>
+            <span class="chip">Modern</span>
+          </div>
+        </div>
+        <div class="card hero-preview">
+          <img src="logos/dexa-logo-primary.svg" alt="DEXA Movers primary logo" />
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="card section">
+          <h2>Brand Summary</h2>
+          <p>
+            <strong>Primary tagline:</strong> Smarter moving, room by room.
+          </p>
+          <p>
+            <strong>Campaign line:</strong> Move without the usual chaos.
+          </p>
+          <p>
+            <strong>Brand voice:</strong> direct, reassuring, organized,
+            professional, never loud or gimmicky.
+          </p>
+          <p>
+            <strong>Visual signal:</strong> the monogram pairs a slate
+            <strong>D</strong> with a copper <strong>M</strong>, using the copper
+            dot to tie both forms together.
+          </p>
+        </article>
+        <article class="card section">
+          <h2>Usage Direction</h2>
+          <p>
+            Use the full logo for the website, flyers, invoices, signage, and
+            large-format print. Use the mark-only files for small placements like
+            embroidery, favicons, social avatars, hat fronts, and icon badges.
+          </p>
+          <p>
+            Use reverse or one-color files when production limits the number of
+            inks or when the background is dark, textured, or highly colored.
+          </p>
+        </article>
+      </section>
+
+      <section class="card section" style="margin-bottom: 28px;">
+        <h2>Logo System</h2>
+        <div class="logo-samples">
+          <figure class="logo-sample">
+            <div class="preview">
+              <img src="logos/dexa-logo-primary.svg" alt="Primary DEXA logo" />
+            </div>
+            <figcaption class="label">Primary logo for light backgrounds</figcaption>
+          </figure>
+          <figure class="logo-sample dark">
+            <div class="preview">
+              <img src="logos/dexa-logo-reverse.svg" alt="Reverse DEXA logo" />
+            </div>
+            <figcaption class="label">Reverse logo for dark backgrounds</figcaption>
+          </figure>
+          <figure class="logo-sample">
+            <div class="preview">
+              <img src="logos/dexa-mark-primary.svg" alt="DEXA mark only" />
+            </div>
+            <figcaption class="label">Mark-only asset for small applications</figcaption>
+          </figure>
+          <figure class="logo-sample dark">
+            <div class="preview">
+              <img src="logos/dexa-mark-one-color-white.svg" alt="DEXA one-color white mark" />
+            </div>
+            <figcaption class="label">One-color mark for embroidery and uniforms</figcaption>
+          </figure>
+        </div>
+        <table style="margin-top: 22px;">
+          <thead>
+            <tr>
+              <th>Rule</th>
+              <th>Guidance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Clear space</td>
+              <td>Keep a minimum clear space around the logo equal to the copper dot diameter.</td>
+            </tr>
+            <tr>
+              <td>Minimum size</td>
+              <td>Full logo: 220 px digital or 1.75 in print. Mark only: 48 px digital or 0.5 in print.</td>
+            </tr>
+            <tr>
+              <td>Do not</td>
+              <td>Stretch, recolor arbitrarily, add outlines, use drop shadows, or place on busy photography without a solid container.</td>
+            </tr>
+            <tr>
+              <td>Small production</td>
+              <td>For embroidery or one-color printing under 3.25 in wide, use the mark-only file instead of the full lockup.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card section" style="margin-bottom: 28px;">
+        <h2>Color Palette</h2>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="swatch-color" style="background:#253042;"></div>
+            <div class="swatch-meta">
+              <strong>Slate</strong>
+              <div>HEX <code>#253042</code></div>
+              <div>RGB 37, 48, 66</div>
+              <div>CMYK 44, 27, 0, 74</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#B85718;"></div>
+            <div class="swatch-meta">
+              <strong>Copper</strong>
+              <div>HEX <code>#B85718</code></div>
+              <div>RGB 184, 87, 24</div>
+              <div>CMYK 0, 53, 87, 28</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#F7F3EC;"></div>
+            <div class="swatch-meta">
+              <strong>Cream</strong>
+              <div>HEX <code>#F7F3EC</code></div>
+              <div>RGB 247, 243, 236</div>
+              <div>CMYK 0, 2, 5, 3</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#ADA49A;"></div>
+            <div class="swatch-meta">
+              <strong>Stone</strong>
+              <div>HEX <code>#ADA49A</code></div>
+              <div>RGB 173, 164, 154</div>
+              <div>CMYK 0, 5, 11, 32</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#19160F;"></div>
+            <div class="swatch-meta">
+              <strong>Ink</strong>
+              <div>HEX <code>#19160F</code></div>
+              <div>RGB 25, 22, 15</div>
+              <div>CMYK 0, 12, 40, 90</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="card section">
+          <h2>Typography</h2>
+          <div class="type-samples">
+            <div class="type-sample">
+              <div class="serif">Cormorant</div>
+              <div class="sans">
+                Cormorant Garamond is the display face for the logo, hero
+                headlines, and premium brand moments.
+              </div>
+            </div>
+            <div class="type-sample">
+              <div class="sans" style="font-size:1.6rem;font-weight:700;color:#253042;margin-bottom:10px;">Plus Jakarta Sans</div>
+              <div class="sans">
+                Plus Jakarta Sans handles body copy, service details, labels, and
+                operational communication.
+              </div>
+            </div>
+          </div>
+          <table style="margin-top: 18px;">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Typeface</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Logo and headlines</td>
+                <td>Cormorant Garamond</td>
+              </tr>
+              <tr>
+                <td>Body, UI, forms, captions</td>
+                <td>Plus Jakarta Sans</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="card section">
+          <h2>Voice and Messaging</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Use More</th>
+                <th>Use Less</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Clear promises, practical language, calm confidence</td>
+                <td>Overhype, slang, gimmicky sales language</td>
+              </tr>
+              <tr>
+                <td>Organized, prepared, careful, responsive</td>
+                <td>Cheap, chaotic, aggressive, flashy</td>
+              </tr>
+              <tr>
+                <td>Short service explanations and local credibility</td>
+                <td>Generic "best movers" claims with no substance</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="card section">
+          <h2>Apparel Guidance</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Application</th>
+                <th>Recommended Asset</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Left chest print</td>
+                <td><code>logos/dexa-mark-one-color-white.svg</code> on dark garments or <code>logos/dexa-mark-one-color-slate.svg</code> on light garments</td>
+              </tr>
+              <tr>
+                <td>Back print</td>
+                <td><code>logos/dexa-logo-one-color-white.svg</code> or <code>logos/dexa-logo-one-color-slate.svg</code> at 10 to 12 in wide</td>
+              </tr>
+              <tr>
+                <td>Embroidery on caps or polos</td>
+                <td>Mark-only versions; avoid the small Ottawa subtitle and thin separator rule</td>
+              </tr>
+              <tr>
+                <td>Premium merchandise</td>
+                <td>Primary copper and slate logo works best on cream, natural, stone, charcoal, and navy fabric</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="footer-note">
+            Best garment colors: cream, natural, sand, stone, charcoal, navy,
+            faded black, and slate blue. Avoid bright reds, neon greens, and
+            saturated purple tones.
+          </p>
+        </article>
+        <article class="card section">
+          <h2>Social Media Guidance</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Platform</th>
+                <th>Recommended Asset</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Facebook page profile</td>
+                <td><code>social/dexa-avatar.svg</code> or PNG export. Meta recommends a 320 x 320 profile image for best quality.</td>
+              </tr>
+              <tr>
+                <td>Instagram profile</td>
+                <td>Use the same centered square avatar because Instagram crops the image into a circle.</td>
+              </tr>
+              <tr>
+                <td>Facebook cover</td>
+                <td><code>social/dexa-facebook-cover.svg</code> or PNG export sized to the cover ratio.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="footer-note">
+            Keep the monogram centered with generous padding so circular crops do
+            not clip the mark.
+          </p>
+        </article>
+      </section>
+
+      <section class="card section asset-links">
+        <h2>Asset Pack</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Asset</th>
+              <th>Path</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>Primary logo</td>
+                <td><a href="logos/dexa-logo-primary.svg"><code>brand/logos/dexa-logo-primary.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Primary logo PNG</td>
+                <td><a href="logos/dexa-logo-primary.png"><code>brand/logos/dexa-logo-primary.png</code></a></td>
+              </tr>
+              <tr>
+                <td>Reverse logo</td>
+                <td><a href="logos/dexa-logo-reverse.svg"><code>brand/logos/dexa-logo-reverse.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>One-color slate logo</td>
+                <td><a href="logos/dexa-logo-one-color-slate.svg"><code>brand/logos/dexa-logo-one-color-slate.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>One-color white logo</td>
+                <td><a href="logos/dexa-logo-one-color-white.svg"><code>brand/logos/dexa-logo-one-color-white.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Primary mark</td>
+                <td><a href="logos/dexa-mark-primary.svg"><code>brand/logos/dexa-mark-primary.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Primary mark PNG</td>
+                <td><a href="logos/dexa-mark-primary.png"><code>brand/logos/dexa-mark-primary.png</code></a></td>
+              </tr>
+              <tr>
+                <td>One-color slate mark</td>
+                <td><a href="logos/dexa-mark-one-color-slate.svg"><code>brand/logos/dexa-mark-one-color-slate.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>One-color white mark</td>
+                <td><a href="logos/dexa-mark-one-color-white.svg"><code>brand/logos/dexa-mark-one-color-white.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Social avatar</td>
+                <td><a href="social/dexa-avatar.svg"><code>brand/social/dexa-avatar.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Social avatar PNG</td>
+                <td><a href="social/dexa-avatar.png"><code>brand/social/dexa-avatar.png</code></a></td>
+              </tr>
+              <tr>
+                <td>Facebook cover</td>
+                <td><a href="social/dexa-facebook-cover.svg"><code>brand/social/dexa-facebook-cover.svg</code></a></td>
+              </tr>
+              <tr>
+                <td>Facebook cover PNG</td>
+                <td><a href="social/dexa-facebook-cover.png"><code>brand/social/dexa-facebook-cover.png</code></a></td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="footer-note">
+          This brand guide was prepared from the production site assets and tuned
+          for website, social, and apparel use.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

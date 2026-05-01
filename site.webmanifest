@@ -1,0 +1,17 @@
+{
+  "name": "DEXA Movers",
+  "short_name": "DEXA Movers",
+  "description": "Smart moving in Ottawa and surrounding areas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8f2",
+  "theme_color": "#f26a2e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
