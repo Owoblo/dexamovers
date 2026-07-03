@@ -1,11 +1,11 @@
 {
   "name": "DEXA Movers",
   "short_name": "DEXA Movers",
-  "description": "Smart moving in Ottawa and surrounding areas.",
+  "description": "Heavy lifting, light touch for Ottawa and surrounding areas.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff8f2",
-  "theme_color": "#f26a2e",
+  "background_color": "#f6f8fb",
+  "theme_color": "#052651",
   "icons": [
     {
       "src": "/favicon.svg",

@@ -1,35 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">DEXA Movers social preview</title>
   <desc id="desc">DEXA Movers website preview card.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff7ef" />
-      <stop offset="100%" stop-color="#f4e7d9" />
-    </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f26a2e" />
-      <stop offset="100%" stop-color="#ff9852" />
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)" />
-  <circle cx="120" cy="90" r="180" fill="#f26a2e" opacity="0.12" />
-  <circle cx="1060" cy="520" r="220" fill="#123a7a" opacity="0.1" />
-  <rect x="72" y="78" width="120" height="120" rx="28" fill="#123a7a" />
-  <path
-    d="M110 110h27c20 0 35 14 35 37s-15 41-38 41h-24v-78Zm18 19v41h7c12 0 19-8 19-21s-7-20-19-20h-7Z"
-    fill="url(#accent)"
-  />
-  <text x="72" y="302" fill="#123a7a" font-family="Space Grotesk, Arial, sans-serif" font-size="88" font-weight="700">
-    DEXA Movers
+  <rect width="1200" height="630" fill="#f6f8fb"/>
+  <rect x="0" y="0" width="1200" height="96" fill="#052651"/>
+  <rect x="0" y="534" width="1200" height="96" fill="#052651"/>
+  <circle cx="1010" cy="130" r="150" fill="#f7941d" opacity="0.12"/>
+  <circle cx="120" cy="520" r="190" fill="#052651" opacity="0.08"/>
+  <image href="logo.svg" x="84" y="130" width="430" height="310" preserveAspectRatio="xMidYMid meet"/>
+  <text x="580" y="230" fill="#052651" font-family="Montserrat, Arial, sans-serif" font-size="64" font-weight="900">
+    Heavy Lifting,
   </text>
-  <text x="72" y="382" fill="#1f2d45" font-family="Instrument Serif, Georgia, serif" font-size="54">
-    Smart moving in Ottawa and surrounding areas
+  <text x="580" y="305" fill="#f7941d" font-family="Montserrat, Arial, sans-serif" font-size="64" font-weight="900">
+    Light Touch.
   </text>
-  <text x="72" y="470" fill="#4f5d73" font-family="Space Grotesk, Arial, sans-serif" font-size="34">
-    Local moves • long-distance • packing • labour-only • office relocation
+  <text x="580" y="372" fill="#4e5d6e" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="600">
+    Local moves, long-distance moves, packing,
   </text>
-  <rect x="72" y="514" width="360" height="56" rx="28" fill="#ffffff" stroke="#d7d8dc" />
-  <text x="104" y="551" fill="#123a7a" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">
-    dexamovers.ca
+  <text x="580" y="414" fill="#4e5d6e" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="600">
+    labour-only help, and office relocation.
   </text>
+  <rect x="580" y="462" width="268" height="54" rx="6" fill="#ffffff" stroke="#d9e3ed"/>
+  <text x="610" y="498" fill="#052651" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="800">dexamovers.ca</text>
 </svg>

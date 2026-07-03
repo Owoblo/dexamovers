@@ -1,64 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" role="img" aria-label="DEXA Movers logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="DEXA Movers logo">
   <title>DEXA Movers</title>
+  <defs>
+    <style>
+      .navy { fill: #052651; }
+      .orange { fill: #f7941d; }
+      .word { font-family: Montserrat, Arial, sans-serif; font-weight: 900; letter-spacing: 4px; }
+      .tag { font-family: Montserrat, Arial, sans-serif; font-weight: 700; letter-spacing: 0.8px; }
+    </style>
+  </defs>
 
-  <!--
-    D letterform — deep slate #253042
-    Outer: left stem (rect) + right semicircle (arc, r=100)
-    Inner: right semicircle counter (arc, r=64) + left edge line
-    fill-rule="evenodd" cuts the counter from the outer shape
-  -->
-  <path
-    fill="#253042"
-    fill-rule="evenodd"
-    d="
-      M 60,60 L 95,60 A 100,100 0 0,1 95,260 L 60,260 Z
-      M 95,96 A 64,64 0 0,1 95,224 L 95,96 Z
-    "
-  />
+  <path class="navy" fill-rule="evenodd" d="M175 44h122c104 0 178 79 178 181 0 56-22 106-58 139v-67c13-21 20-45 20-72 0-79-56-138-141-138h-76v86h79c54 0 92 36 92 89 0 28-10 52-29 69h-142v86h-45V44Zm77 171v73h79c13-3 22-14 22-28 0-27-21-45-54-45h-47Z"/>
 
-  <!--
-    Copper accent dot floating inside D's hollow counter.
-    Links the D (slate) to the M (copper) — shared colour signal.
-  -->
-  <circle cx="130" cy="160" r="20" fill="#B85718"/>
+  <path class="orange" d="M107 282c0-10 4-20 11-28l34-40c8-9 19-14 31-14h32v88h-42c-18 0-33 15-33 33v37h-33v-76Z"/>
+  <path fill="#fff" d="M148 258l24-28c4-5 10-8 17-8h17v36h-58Z"/>
+  <rect class="orange" x="107" y="288" width="329" height="70" rx="7"/>
+  <rect fill="#fff" x="216" y="276" width="118" height="55"/>
+  <circle class="orange" cx="177" cy="358" r="37"/>
+  <circle fill="#fff" cx="177" cy="358" r="21"/>
+  <circle class="orange" cx="385" cy="358" r="37"/>
+  <circle fill="#fff" cx="385" cy="358" r="21"/>
+  <path class="orange" d="M90 388c98 8 248 8 370 0-81 20-273 21-370 0Z"/>
 
-  <!--
-    M letterform — copper #B85718
-    Bold geometric M: two vertical stems + two angled bars meeting at a centre V.
-    Top V notch peaks at (287,145). Bottom V merges at (287,190).
-  -->
-  <polygon
-    fill="#B85718"
-    points="
-      215,260 250,260 250,110
-      287,190
-      324,110 324,260 360,260
-      360,60 324,60 287,145 250,60 215,60
-    "
-  />
-
-  <!-- Wordmark: DEXA MOVERS -->
-  <text
-    x="210" y="308"
-    text-anchor="middle"
-    font-family="'Cormorant Garamond', Georgia, serif"
-    font-size="34"
-    font-weight="600"
-    letter-spacing="6"
-    fill="#253042"
-  >DEXA MOVERS</text>
-
-  <!-- Copper rule separator -->
-  <rect x="152" y="320" width="116" height="1.5" rx="1" fill="#B85718"/>
-
-  <!-- Ottawa subtitle -->
-  <text
-    x="210" y="346"
-    text-anchor="middle"
-    font-family="'Plus Jakarta Sans', Arial, sans-serif"
-    font-size="11"
-    font-weight="600"
-    letter-spacing="4"
-    fill="#ADA49A"
-  >OTTAWA</text>
+  <text class="word navy" x="320" y="425" text-anchor="middle" font-size="52">DEXA MOVERS</text>
+  <path class="orange" d="M190 444h50v4h-50zM400 444h50v4h-50z"/>
+  <text class="tag navy" x="320" y="450" text-anchor="middle" font-size="16">Heavy Lifting, Light Touch</text>
 </svg>

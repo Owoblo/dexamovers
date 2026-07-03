@@ -1,21 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-label="DEXA Movers mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="DEXA Movers mark">
   <title>DEXA Movers Mark</title>
-  <path
-    fill="#253042"
-    fill-rule="evenodd"
-    d="
-      M 60,30 L 95,30 A 100,100 0 0,1 95,230 L 60,230 Z
-      M 95,66 A 64,64 0 0,1 95,194 L 95,66 Z
-    "
-  />
-  <circle cx="130" cy="130" r="20" fill="#B85718"/>
-  <polygon
-    fill="#B85718"
-    points="
-      215,230 250,230 250,80
-      287,160
-      324,80 324,230 360,230
-      360,30 324,30 287,115 250,30 215,30
-    "
-  />
+  <path fill="#052651" fill-rule="evenodd" d="M175 44h122c104 0 178 79 178 181 0 56-22 106-58 139v-67c13-21 20-45 20-72 0-79-56-138-141-138h-76v86h79c54 0 92 36 92 89 0 28-10 52-29 69h-142v86h-45V44Zm77 171v73h79c13-3 22-14 22-28 0-27-21-45-54-45h-47Z"/>
+  <path fill="#f7941d" d="M107 282c0-10 4-20 11-28l34-40c8-9 19-14 31-14h32v88h-42c-18 0-33 15-33 33v37h-33v-76Z"/>
+  <path fill="#fff" d="M148 258l24-28c4-5 10-8 17-8h17v36h-58Z"/>
+  <rect fill="#f7941d" x="107" y="288" width="329" height="70" rx="7"/>
+  <rect fill="#fff" x="216" y="276" width="118" height="55"/>
+  <circle fill="#f7941d" cx="177" cy="358" r="37"/>
+  <circle fill="#fff" cx="177" cy="358" r="21"/>
+  <circle fill="#f7941d" cx="385" cy="358" r="37"/>
+  <circle fill="#fff" cx="385" cy="358" r="21"/>
 </svg>

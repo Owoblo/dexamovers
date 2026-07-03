@@ -1,37 +1,37 @@
 /* =====================================================
    DEXA Movers — Production Styles
-   Aesthetic: Warm Craftsman Editorial
-   Fonts: Cormorant Garamond (display) + Plus Jakarta Sans (body)
+   Aesthetic: Clean logistics brand
+   Fonts: Montserrat
    ===================================================== */
 
 /* ---- DESIGN TOKENS ---- */
 :root {
-  --bg:           #F7F3EC;
-  --bg-alt:       #EDEAE1;
-  --bg-deep:      #E3DDD3;
-  --surface:      #FDFAF5;
-  --surface-2:    rgba(253, 250, 245, 0.92);
-  --ink:          #19160F;
-  --ink-2:        #6E6459;
-  --ink-3:        #ADA49A;
-  --copper:       #B85718;
-  --copper-2:     #9E4912;
-  --copper-tint:  rgba(184, 87, 24, 0.1);
-  --slate:        #253042;
-  --slate-tint:   rgba(37, 48, 66, 0.06);
-  --line:         rgba(25, 22, 15, 0.09);
-  --line-2:       rgba(25, 22, 15, 0.16);
-  --shadow-xs:    0 1px 4px rgba(25, 22, 15, 0.05);
-  --shadow-sm:    0 4px 16px rgba(25, 22, 15, 0.08);
-  --shadow:       0 12px 40px rgba(25, 22, 15, 0.1);
-  --shadow-lg:    0 24px 72px rgba(25, 22, 15, 0.13);
+  --bg:           #F6F8FB;
+  --bg-alt:       #EAF0F6;
+  --bg-deep:      #D9E3ED;
+  --surface:      #FFFFFF;
+  --surface-2:    rgba(255, 255, 255, 0.94);
+  --ink:          #071A33;
+  --ink-2:        #4E5D6E;
+  --ink-3:        #8B98A7;
+  --copper:       #F7941D;
+  --copper-2:     #D97900;
+  --copper-tint:  rgba(247, 148, 29, 0.12);
+  --slate:        #052651;
+  --slate-tint:   rgba(5, 38, 81, 0.07);
+  --line:         rgba(7, 26, 51, 0.09);
+  --line-2:       rgba(7, 26, 51, 0.16);
+  --shadow-xs:    0 1px 4px rgba(5, 38, 81, 0.05);
+  --shadow-sm:    0 4px 16px rgba(5, 38, 81, 0.08);
+  --shadow:       0 12px 40px rgba(5, 38, 81, 0.1);
+  --shadow-lg:    0 24px 72px rgba(5, 38, 81, 0.14);
   --r:            6px;
   --r-md:         10px;
   --r-lg:         16px;
   --r-xl:         22px;
   --container:    min(1160px, calc(100vw - 48px));
-  --font-serif:   'Cormorant Garamond', Georgia, serif;
-  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-serif:   'Montserrat', system-ui, sans-serif;
+  --font-body:    'Montserrat', system-ui, sans-serif;
 }
 
 /* ---- RESET ---- */
@@ -44,7 +44,9 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--ink);
-  background-color: var(--bg);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.72), rgba(246,248,251,0) 28rem),
+    var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -136,7 +138,7 @@ em { font-style: italic; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 243, 236, 0.94);
+  background: rgba(246, 248, 251, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--line);
@@ -151,37 +153,11 @@ em { font-style: italic; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
-}
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: var(--r);
-  background: var(--slate);
-  color: var(--bg);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: italic;
   flex-shrink: 0;
 }
-.brand-copy strong {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  color: var(--ink);
-}
-.brand-copy span {
-  display: block;
-  font-size: 0.73rem;
-  color: var(--ink-2);
-  letter-spacing: 0.05em;
-  margin-top: 3px;
+.brand-logo {
+  width: clamp(190px, 23vw, 286px);
+  height: auto;
 }
 .site-nav {
   display: flex;
@@ -247,14 +223,14 @@ em { font-style: italic; }
   background: var(--copper);
   color: #fff;
   border-color: var(--copper);
-  box-shadow: 0 4px 18px rgba(184, 87, 24, 0.3);
+  box-shadow: 0 4px 18px rgba(247, 148, 29, 0.3);
 }
 .button-primary:hover,
 .button-primary:focus-visible {
   background: var(--copper-2);
   border-color: var(--copper-2);
   transform: translateY(-1px);
-  box-shadow: 0 8px 28px rgba(184, 87, 24, 0.35);
+  box-shadow: 0 8px 28px rgba(247, 148, 29, 0.35);
 }
 .button-secondary {
   background: transparent;
@@ -264,7 +240,7 @@ em { font-style: italic; }
 .button-secondary:hover,
 .button-secondary:focus-visible {
   background: var(--slate-tint);
-  border-color: rgba(37, 48, 66, 0.4);
+  border-color: rgba(5, 38, 81, 0.4);
 }
 .button-small {
   min-height: 40px;
@@ -288,7 +264,7 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--copper);
-  box-shadow: 0 0 0 3px rgba(184, 87, 24, 0.12);
+  box-shadow: 0 0 0 3px rgba(247, 148, 29, 0.16);
 }
 textarea { resize: vertical; min-height: 116px; }
 label {
@@ -335,7 +311,7 @@ label {
   font-size: clamp(3.8rem, 7.5vw, 6.8rem);
   font-weight: 500;
   line-height: 0.93;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: var(--ink);
   margin-bottom: 1.5rem;
 }
@@ -630,7 +606,7 @@ label {
 .cta-banner .button-primary {
   background: var(--copper);
   border-color: var(--copper);
-  box-shadow: 0 4px 20px rgba(184, 87, 24, 0.35);
+  box-shadow: 0 4px 20px rgba(247, 148, 29, 0.35);
   flex-shrink: 0;
   min-width: 180px;
 }
@@ -705,7 +681,7 @@ label {
   border-color: var(--copper);
   width: 100%;
   justify-content: center;
-  box-shadow: 0 4px 18px rgba(184, 87, 24, 0.3);
+  box-shadow: 0 4px 18px rgba(247, 148, 29, 0.3);
 }
 .area-cta-card .button:hover {
   background: var(--copper-2);

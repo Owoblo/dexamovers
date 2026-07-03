@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 154" role="img" aria-label="DEXA Movers logo">
+  <title>DEXA Movers</title>
+  <path fill="#052651" fill-rule="evenodd" d="M52 8h48c42 0 72 32 72 73 0 23-9 43-24 56v-27c5-8 8-18 8-29 0-32-23-56-57-56H69v35h32c22 0 38 15 38 36 0 11-4 21-12 28H69v35H52V8Zm31 69v30h32c5-1 9-6 9-12 0-11-9-18-22-18H83Z"/>
+  <path fill="#f7941d" d="M18 104c0-4 2-8 5-12l14-16c3-4 8-6 13-6h13v36H46c-7 0-13 6-13 13v15H18v-30Z"/>
+  <path fill="#fff" d="M35 94l10-12c2-2 4-3 7-3h7v15H35Z"/>
+  <rect fill="#f7941d" x="18" y="107" width="134" height="29" rx="3"/>
+  <circle fill="#f7941d" cx="47" cy="137" r="15"/>
+  <circle fill="#fff" cx="47" cy="137" r="8"/>
+  <circle fill="#f7941d" cx="132" cy="137" r="15"/>
+  <circle fill="#fff" cx="132" cy="137" r="8"/>
+  <text x="200" y="62" font-family="Montserrat, Arial, sans-serif" font-size="42" font-weight="900" letter-spacing="2" fill="#052651">DEXA MOVERS</text>
+  <path fill="#f7941d" d="M202 83h44v4h-44zM448 83h44v4h-44z"/>
+  <text x="260" y="91" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing=".4" fill="#052651">Heavy Lifting, Light Touch</text>
+</svg>
