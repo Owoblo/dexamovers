@@ -156,7 +156,7 @@ em { font-style: italic; }
   flex-shrink: 0;
 }
 .brand-logo {
-  width: clamp(190px, 23vw, 286px);
+  width: clamp(150px, 15vw, 220px);
   height: auto;
 }
 .site-nav {

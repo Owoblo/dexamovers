@@ -1,27 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="DEXA Movers logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="DEXA Movers logo">
   <title>DEXA Movers</title>
   <defs>
     <style>
       .navy { fill: #052651; }
       .orange { fill: #f7941d; }
-      .word { font-family: Montserrat, Arial, sans-serif; font-weight: 900; letter-spacing: 4px; }
-      .tag { font-family: Montserrat, Arial, sans-serif; font-weight: 700; letter-spacing: 0.8px; }
+      .word {
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      .tag {
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
     </style>
   </defs>
 
-  <path class="navy" fill-rule="evenodd" d="M175 44h122c104 0 178 79 178 181 0 56-22 106-58 139v-67c13-21 20-45 20-72 0-79-56-138-141-138h-76v86h79c54 0 92 36 92 89 0 28-10 52-29 69h-142v86h-45V44Zm77 171v73h79c13-3 22-14 22-28 0-27-21-45-54-45h-47Z"/>
+  <path class="navy" d="M134 32h112c85 0 151 66 151 151 0 43-17 82-45 110v-56c10-16 16-35 16-55 0-69-53-122-122-122h-84v101h84c51 0 89 36 89 84 0 20-6 39-18 54H162v76h-28V32Z"/>
+  <path fill="#fff" d="M162 91h78c53 0 96 40 96 93 0 18-5 34-13 49H229v-36h17c28 0 48 20 48 48 0 8-2 16-6 23h-126V91Z"/>
+  <path class="navy" d="M162 91h78c53 0 96 40 96 93 0 18-5 34-13 49h-42c12-11 19-28 19-47 0-38-26-66-66-66h-72V91Z"/>
 
-  <path class="orange" d="M107 282c0-10 4-20 11-28l34-40c8-9 19-14 31-14h32v88h-42c-18 0-33 15-33 33v37h-33v-76Z"/>
-  <path fill="#fff" d="M148 258l24-28c4-5 10-8 17-8h17v36h-58Z"/>
-  <rect class="orange" x="107" y="288" width="329" height="70" rx="7"/>
-  <rect fill="#fff" x="216" y="276" width="118" height="55"/>
-  <circle class="orange" cx="177" cy="358" r="37"/>
-  <circle fill="#fff" cx="177" cy="358" r="21"/>
-  <circle class="orange" cx="385" cy="358" r="37"/>
-  <circle fill="#fff" cx="385" cy="358" r="21"/>
-  <path class="orange" d="M90 388c98 8 248 8 370 0-81 20-273 21-370 0Z"/>
+  <path class="orange" d="M74 237c0-10 4-19 11-26l31-35c7-8 18-13 29-13h38v86h-50c-18 0-33 15-33 33v35H74v-80Z"/>
+  <path fill="#fff" d="M102 217l23-26c5-5 11-8 18-8h23v34h-64Z"/>
+  <rect class="orange" x="74" y="249" width="263" height="59" rx="6"/>
+  <rect fill="#fff" x="183" y="239" width="100" height="47"/>
+  <circle class="orange" cx="125" cy="309" r="33"/>
+  <circle fill="#fff" cx="125" cy="309" r="18"/>
+  <circle class="orange" cx="302" cy="309" r="33"/>
+  <circle fill="#fff" cx="302" cy="309" r="18"/>
+  <path class="orange" d="M62 342c82 8 213 8 301 0-73 17-224 18-301 0Z"/>
 
-  <text class="word navy" x="320" y="425" text-anchor="middle" font-size="52">DEXA MOVERS</text>
-  <path class="orange" d="M190 444h50v4h-50zM400 444h50v4h-50z"/>
-  <text class="tag navy" x="320" y="450" text-anchor="middle" font-size="16">Heavy Lifting, Light Touch</text>
+  <text class="word navy" x="210" y="374" text-anchor="middle" font-size="35">DEXA MOVERS</text>
+  <path class="orange" d="M101 392h35v3h-35zM284 392h35v3h-35z"/>
+  <text class="tag navy" x="210" y="399" text-anchor="middle" font-size="13">Heavy Lifting, Light Touch</text>
 </svg>
