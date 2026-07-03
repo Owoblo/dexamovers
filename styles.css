@@ -156,8 +156,9 @@ em { font-style: italic; }
   flex-shrink: 0;
 }
 .brand-logo {
-  width: clamp(150px, 15vw, 220px);
-  height: auto;
+  width: auto;
+  height: clamp(76px, 7vw, 112px);
+  object-fit: contain;
 }
 .site-nav {
   display: flex;
